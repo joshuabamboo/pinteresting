@@ -1,0 +1,5 @@
+$body-bg:    #e67e22;
+$navbar-inverse-bg:  #d35400;
+$navbar-inverse-link-color: #fff;
+
+@import 'bootstrap';
