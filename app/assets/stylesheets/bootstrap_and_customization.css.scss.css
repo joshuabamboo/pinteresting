@@ -1,5 +1,17 @@
-$body-bg:    #e67e22;
-$navbar-inverse-bg:  #d35400;
-$navbar-inverse-link-color: #fff;
+@import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
+
+$font-family-sans-serif:			'Hammersmith One';
+$body-bg: 							#ecf0f1;
+$navbar-default-bg: 				white;
+$navbar-height:						45px;
+$navbar-inverse-link-color: 		white;
+$navbar-default-brand-color: 		#f39c12;
+$brand-primary: 					#f39c12;
+$jumbotron-bg: 						white;
+$link-color: 						white;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
