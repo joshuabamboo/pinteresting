@@ -8,7 +8,7 @@ $navbar-inverse-link-color: 		white;
 $navbar-default-brand-color: 		#f39c12;
 $brand-primary: 					#f39c12;
 $jumbotron-bg: 						white;
-$link-color: 						white;
+$link-color: 						#f39c12;
 
 @import 'bootstrap';
 
