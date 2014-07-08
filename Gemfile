@@ -15,6 +15,7 @@ gem 'devise', '~> 3.2.4.rc2'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '~> 1.20.0'
 gem 'masonry-rails', '~> 0.2.0'
+gem 'will_paginate', '~> 3.0.5’
 
 group :development, :test do 
 	gem 'sqlite3'
