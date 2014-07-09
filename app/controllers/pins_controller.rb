@@ -30,7 +30,7 @@ class PinsController < ApplicationController
     if @pin.save
       redirect_to @pin, notice: 'Pin was successfully created.' 
     else
-      render :new 
+      render action: 'new' 
     end
   end
 
@@ -40,7 +40,7 @@ class PinsController < ApplicationController
     if @pin.update(pin_params)
       redirect_to @pin, notice: 'Pin was successfully updated.' 
     else
-      render :edit
+      render action: 'edit'
     end
   end
 
@@ -48,7 +48,7 @@ class PinsController < ApplicationController
   # DELETE /pins/1.json
   def destroy
     @pin.destroy
-    redirect_to @pin, notice: 'Pin was successfully destroyed.'
+    redirect_to pins_url, notice: 'Pin was successfully destroyed.'
   end
 
   private
@@ -58,7 +58,7 @@ class PinsController < ApplicationController
     end
 
     def correct_user
-      @pin = current_user.pins.find_by(params[:id])
+      @pin = current_user.pins.find_by(id: params[:id])
       redirect_to pins_path, notice: "Not authorized to view this pin" if @pin.nil?
     end
 
