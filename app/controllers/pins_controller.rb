@@ -48,7 +48,7 @@ class PinsController < ApplicationController
   # DELETE /pins/1.json
   def destroy
     @pin.destroy
-    redirect_to pins_url, notice: 'Pin was successfully destroyed.'
+    redirect_to @pin, notice: 'Pin was successfully destroyed.'
   end
 
   private
